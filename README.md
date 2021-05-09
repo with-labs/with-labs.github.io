@@ -1,2 +1,1 @@
-# with-labs.github.io
-With Blog
+# With Blog
