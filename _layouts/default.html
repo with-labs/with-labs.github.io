@@ -2,32 +2,27 @@
 <html>
   <head>
     <title>{{ page.title }}</title>
-    
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-  
   </head>
 
-
   <body>
-    <nav>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/about">About</a></li>
-<li><a href="/blog">Blog</a></li>
-</ul>
+
+    <nav style="background-image: url({{ page.cover | default: '/assets/texture.png' }});">
+      <a class="logo" href="/">
+      {% if page.whiteLogo == true %}
+        <img style="filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.15));" src="/assets/logo_white.svg" height="100"/>
+      {% else %}
+        <img style="filter: drop-shadow(0 0 1rem white);" src="/assets/logo.svg" height="100"/>
+      {% endif %}
+      </a>
     </nav>
-<div class="container">
 
-  {{ content }}
-
-</div>
-  
-  <footer>
-   <ul>
-   <li><a href="https://with.so">With</a></li>
-   <li><a href="https://twitter.com/WithHQ/">Twitter</a></li>
-   </ul>
-  </footer>
+    <main>
+      <section>
+        {{ content }}
+      </section>
+      {% include footer.html %}
+    </main>
   </body>
 
 </html>
