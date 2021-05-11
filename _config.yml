@@ -1,3 +1,5 @@
 name: With Blog
 markdown: kramdown
+title: "With Blog"
+url: "https://with-labs.github.io"
 permalink: /blog/:year/:month/:day/:title

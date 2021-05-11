@@ -275,6 +275,7 @@ a:active {
 .brushed_border {
     -webkit-mask-box-image: url('/assets/mask.png') 915;
     mask-border: url('/assets/mask.png') 915;
+    border-radius: var(--border-radius-l);
 }
 
 .post_header {
@@ -305,6 +306,7 @@ time {
     background-size: 300px 270px, 400px 380px, cover;
     margin-bottom: 40px;
     padding: 56px;
+    /* border-radius: var(--border-radius-l); */
 }
 
 .hiddenRef {
@@ -328,6 +330,37 @@ time {
     grid: auto / 1fr 1fr;
     column-gap: 24px;
     row-gap: 24px;
+}
+
+.read_more_header {
+    aspect-ratio: 1 / 0.375;
+    border-radius: 6px;
+}
+
+.read_more_title {
+    margin: 0px auto 10px auto;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: var(--font-silka);
+    font-weight: 600;
+
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.read_more_summary {
+    margin: 0px auto 10px auto;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: var(--font-silka);
+    font-weight: 400;
+
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
 }
 
 form {
@@ -418,6 +451,7 @@ form>input[type=submit]:active {
 
 .card > img {
     margin-bottom: 24px;
+    border-radius: var(--border-radius-m);
 }
 
 footer {

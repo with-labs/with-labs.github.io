@@ -6,9 +6,9 @@ authorLink: https://twitter.com/chrisbourdon
 illustrator: "Alexis Taylor"
 illustratorLink: https://www.alexisbrianataylor.com/
 summary: "While async is great for some things, synchronous communication should an important part of remote work. "
-header: "/assets/posts/2021-04-22-the-case-for-synchronous-communication-in-remote-teams.png"
+header: "/assets/posts/2021-04-22-the-case-for/header.png"
 headerAlt: "A description of the header image"
-cover: "/assets/posts/2021-04-22-the-case-for-synchronous-communication-in-remote-teams_cover.jpg"
+cover: "/assets/posts/2021-04-22-the-case-for/cover.jpg"
 date: 2021-05-05
 whiteLogo: false
 ---

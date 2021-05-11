@@ -1,19 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="og: http://ogp.me/ns#">
   <head>
-    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>{{ site.title }} • {{ page.title }}</title>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+    <!-- SEO -->
+    <meta name="description" content="Our relationship with work is changing how we live and move in the world everyday. This blog is the place where we bring together our thoughts about the future of work.">
+    <meta name="keywords" content="platform, collaborate, socialize, virtual, space, spatial, chat, invite, connect, share, friends, coworkers, apps, accessories, customize, room">
+
+    <!-- Basic Open Graph -->
+    <meta itemProp="name" content="{{ site.title }}• {{ page.title }}" class="next-head"/>
+    <meta itemProp="description" content="{{ page.summary }}" class="next-head"/>
+    <meta itemProp="image" content="{{ site.url }}{{ page.header }}" class="next-head"/>
+
+    <!-- Twitter specific Open Graph -->
+    <meta name="twitter:card" content="summary_large_image" class="next-head"/>
+    <meta name="twitter:site" content="@withHQ" class="next-head"/>
+    <meta name="twitter:title" content="{{ site.title }} • {{ page.title }}" class="next-head"/>
+    <meta name="twitter:description" content="{{ page.summary }}" class="next-head"/>
+    <meta name="twitter:creator" content="@withHQ" class="next-head"/>
+    <meta name="twitter:image:src" content="{{ site.url }}{{ page.header }}" class="next-head"/>
+
+    <!-- Generic Open Graph -->
+    <meta property="og:title" content="{{ site.title }} • {{ page.title }}" class="next-head"/>
+    <meta property="og:type" content="article" class="next-head"/>
+    <meta property="og:url" content="{{ site.url }}" class="next-head"/>
+    <meta property="og:image" content="{{ site.url }}{{ page.header }}" class="next-head"/>
+    <meta property="og:description" content="{{ page.summary }}" class="next-head"/>
+    <meta property="og:site_name" content="With Blog" class="next-head"/>
+
+    <!-- favicon for non-IE browsers -->
+    <link rel="icon" type="image/png" href="/assets/brand/favicon_16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="/assets/brand/favicon_32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="/assets/brand/favicon_48x48.png" sizes="48x48"/>
+    <link rel="icon" type="image/png" href="/assets/brand/favicon_256x256.png" sizes="256x256"/>
+
+    <!-- Apple touch icon -->
+    <link rel="apple-touch-icon" href="/assets/brand/favicon_256x256.png"/>
+
+    <!-- favicon ico for IE only -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/brand/favicon.ico"/>
+
+    <!-- safari pinned tabs (macOS) -->
+    <link rel="mask-icon" href="/assets/brand/favicon-pinned-tab.svg" color="#F4675A"/>
+
+    <!-- Fathom - beautiful, simple website analytics
+		<script defer src="https://cdn.usefathom.com/3.js" site="UEEEFJWT"></script>
+		<!-- / Fathom -->
+
   </head>
 
   <body>
 
     <nav style="background-image: url({{ page.cover | default: '/assets/texture.png' }});">
       <a class="logo" href="/">
-      {% if page.whiteLogo == true %}
-        <img style="filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.15));" src="/assets/logo_white.svg" height="100"/>
-      {% else %}
-        <img style="filter: drop-shadow(0 0 1rem white);" src="/assets/logo.svg" height="100"/>
-      {% endif %}
+        {% if page.whiteLogo == true %}
+          <img style="filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.15));" src="/assets/brand/logo_white.svg" height="100"/>
+        {% else %}
+          <img style="filter: drop-shadow(0 0 1rem white);" src="/assets/brand/logo.svg" height="100"/>
+        {% endif %}
       </a>
     </nav>
 

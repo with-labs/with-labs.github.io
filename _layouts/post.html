@@ -22,9 +22,9 @@ layout: default
   {% if post.url != page.url %} 
     {% if forloop.index < 6 or found %}
       <a class="card padding_small" href="{{ post.url }}" title="{{ post.title }}">
-			<img src="{{ post.header }}" width="100%"/>
-			<h3 class="margin_small">{{ post.title }}</h3>
-			<p class="nomargin">{{ post.summary | default: "No excerpt" }}</p>
+			<img class="read_more_header" src="{{ post.header }}" width="100%"/>
+			<p class="read_more_title">{{ post.title }}</p>
+			<p class="read_more_summary">{{ post.summary | default: "No excerpt" }}</p>
 		</a>
     {% endif %}
   {% else %}
