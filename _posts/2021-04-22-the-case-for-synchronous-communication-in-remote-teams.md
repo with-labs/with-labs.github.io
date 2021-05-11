@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The case for synchronous communication in remote teams"
+title: "The case for remote synchronous communication"
 author: "Chris Bourdon"
 authorLink: https://twitter.com/chrisbourdon
 illustrator: "Alexis Taylor"

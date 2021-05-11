@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to be a good interviewer, Q&A with former Twitter VP Engineering"
+title: "Being a good interviewer, Q&A with Rich Paret"
 author: "Chris Bourdon"
 authorLink: https://twitter.com/chrisbourdon
 illustrator: "Farrah Yoo"

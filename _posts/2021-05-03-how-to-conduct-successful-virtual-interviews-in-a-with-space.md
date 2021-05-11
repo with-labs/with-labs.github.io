@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to conduct successful virtual interviews in a With space"
+title: "How to conduct successful virtual interviews"
 author: "Chris Bourdon"
 authorLink: https://twitter.com/chrisbourdon
 illustrator: "Farrah Yoo"
