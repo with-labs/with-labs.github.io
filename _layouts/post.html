@@ -22,10 +22,10 @@ layout: default
   {% if post.url != page.url %} 
     {% if forloop.index < 5 or found %}
       <a class="card padding_small" href="{{ post.url }}" title="{{ post.title }}">
-			<img class="read_more_header" src="{{ post.header }}" width="100%"/>
-			<p class="read_more_title">{{ post.title }}</p>
-			<p class="read_more_summary">{{ post.summary | default: "No excerpt" }}</p>
-		</a>
+        <img class="read_more_header" src="{{ post.header }}" width="100%"/>
+        <p class="read_more_title">{{ post.title }}</p>
+        <p class="read_more_summary">{{ post.summary | default: "No excerpt" }}</p>
+      </a>
     {% endif %}
   {% else %}
     {% assign found = true %} 
