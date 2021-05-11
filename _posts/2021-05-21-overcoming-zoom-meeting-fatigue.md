@@ -7,7 +7,7 @@ illustrator: "Farrah Yoo"
 illustratorLink: https://with.so
 summary: "Team office hours will reduce the onslaught of fatiguing Zoom meetings."
 header: "/assets/posts/2021-05-21-overcoming-zoom-meeting-fatigue/header.jpg"
-headerAlt: "A description of the header image"
+headerAlt: "Five hands tearing a calendar meeting apart."
 cover: "/assets/posts/2021-05-21-overcoming-zoom-meeting-fatigue/cover.jpg"
 date: 2021-05-05
 whiteLogo: true

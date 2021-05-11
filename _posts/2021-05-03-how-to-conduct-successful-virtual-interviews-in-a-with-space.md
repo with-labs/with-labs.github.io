@@ -7,7 +7,7 @@ illustrator: "Farrah Yoo"
 illustratorLink: https://with.so
 summary: "How to use With spaces to conduct virtual interviews that are fun, engaging, and unique."
 header: "/assets/posts/2021-05-03-how-to-conduct/header.jpg"
-headerAlt: "A description of the header image"
+headerAlt: "A woman and a man talking, with speech bubbles, screens and documents floating around them."
 cover: "/assets/posts/2021-05-03-how-to-conduct/cover.jpg"
 date: 2021-05-05
 whiteLogo: true

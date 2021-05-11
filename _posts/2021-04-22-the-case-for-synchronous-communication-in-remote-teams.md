@@ -7,7 +7,7 @@ illustrator: "Alexis Taylor"
 illustratorLink: https://www.alexisbrianataylor.com/
 summary: "While async is great for some things, synchronous communication should an important part of remote work. "
 header: "/assets/posts/2021-04-22-the-case-for/header.png"
-headerAlt: "A description of the header image"
+headerAlt: "A split image with a woman at her desk working on her computer on one side and a man on a laptop, somewhere else, talking with a drink in front of him."
 cover: "/assets/posts/2021-04-22-the-case-for/cover.jpg"
 date: 2021-05-05
 whiteLogo: false

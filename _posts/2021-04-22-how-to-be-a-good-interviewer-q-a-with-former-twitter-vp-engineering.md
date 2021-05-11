@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Being a good interviewer, Q&A with former Twitter VP"
+title: "Being a good interviewer, with former Twitter VP"
 author: "Chris Bourdon"
 authorLink: https://twitter.com/chrisbourdon
 illustrator: "Farrah Yoo"
 illustratorLink: https://with.so
 summary: "Rich Paret, former VP Engineering at Twitter talks about how to be a good interviewer."
 header: "/assets/posts/2021-04-22-how-to-be/header.jpg"
-headerAlt: "A description of the header image"
+headerAlt: "Two people talking with their hands, with speech bubbles around them, with a third pair of hands holding a pile of resumes."
 cover: "/assets/posts/2021-04-22-how-to-be/cover.jpg"
 date: 2021-04-22
 whiteLogo: true
