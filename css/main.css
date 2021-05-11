@@ -484,9 +484,9 @@ footer>ul>li>p {
         overflow-y: auto;
     }
 
-    main {
-        padding: 40px;
-    }
+    /* main {
+        padding: 60px;
+    } */
 }
 
 @media only screen and (max-width: 720px) {
@@ -517,7 +517,7 @@ footer>ul>li>p {
 @media only screen and (max-width: 600px) {
 
     main {
-        padding: 32px;
+        padding: 24px;
     }
 
     .signup_block {
@@ -537,6 +537,11 @@ footer>ul>li>p {
     h2 {
         line-height: 32px;
         font-size: 24px;
+    }
+
+    blockquote {
+        border-left: 4px solid var(--color-lavender-bold);
+        padding: 0px 0px 0px 16px;
     }
 
     blockquote > p {
