@@ -7,25 +7,45 @@
     <link rel="stylesheet" type="text/css" href="/css/main.css">
 
     <!-- Scripts -->
-		<script type="text/javascript">
-			window.addEventListener('load', function () {
-				var links = document.getElementsByTagName('a');
-				var inputs = document.getElementsByClassName('hiddenRef');
-				var ref = /ref=(.*)/gi.exec(window.location.href);
+    <script type="text/javascript">
+      window.addEventListener('load', function () {
+        var links = document.getElementsByTagName('a');
+        var inputs = document.getElementsByClassName('hiddenRef');
+        var ref = /ref=(.*)/gi.exec(window.location.href);
 
-				// Pass the ref to all the links and fill all the inputs
-				if (ref !== null) {
-					for (var i = 0; i < links.length; i++) {
-						links[i].href = links[i].href + "?ref=" + ref[1];
-					}
-					for (var i = 0; i < inputs.length; i++) {
-						inputs[i].value = ref[1];
-					}
-				}
-			}, false);
-		</script>
-		<noscript>JavaScript is disabled on your browser.</noscript>
+        // Pass the ref to all the links and fill all the inputs
+        if (ref !== null) {
+          for (var i = 0; i < links.length; i++) {
+            links[i].href = links[i].href + "?ref=" + ref[1];
+          }
+          for (var i = 0; i < inputs.length; i++) {
+            inputs[i].value = ref[1];
+          }
+        }
+      }, false);
 
+      var _paq = window._paq = window._paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+        var u = "https://withso.matomo.cloud/";
+        _paq.push([
+          'setTrackerUrl', u + 'matomo.php'
+        ]);
+        _paq.push(['setSiteId', '2']);
+        var d = document,
+          g = d.createElement('script'),
+          s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = '//cdn.matomo.cloud/withso.matomo.cloud/matomo.js';
+        s
+          .parentNode
+          .insertBefore(g, s);
+      })();
+    </script>
+    <noscript>JavaScript is disabled on your browser.</noscript>
 
     <!-- SEO -->
     <meta name="description" content="Our relationship with work is changing how we live and move in the world everyday. This blog is the place where we bring together our thoughts about the future of work.">
@@ -67,26 +87,19 @@
     <!-- safari pinned tabs (macOS) -->
     <link rel="mask-icon" href="/assets/brand/favicon-pinned-tab.svg" color="#F4675A"/>
 
-    <!-- Fathom - beautiful, simple website analytics
-		<script defer src="https://cdn.usefathom.com/3.js" site="UEEEFJWT"></script>
-		<!-- / Fathom -->
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script defer src="https://cdn.usefathom.com/script.js" data-site="IJRTTOVL" defer></script>
+    <!-- / Fathom -->
 
   </head>
 
   <body>
 
-    <nav style="background-image: url({{ page.cover | default: '/assets/texture.png' }});">
-      <a class="logo" href="/">
-        {% if page.whiteLogo == true %}
-          <img style="filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.15));" src="/assets/brand/logo_white.svg" height="100"/>
-        {% else %}
-          <img style="filter: drop-shadow(0 0 1rem white);" src="/assets/brand/logo.svg" height="100"/>
-        {% endif %}
-      </a>
-    </nav>
+    <div class="cover" style="background-image: url({{ page.cover | default: '/assets/texture.png' }});"></div>
 
     <main>
       <section>
+        <a class="logo" href="/"><img src="/assets/brand/logo.svg"/></a>
         {{ content }}
       </section>
       {% include footer.html %}
