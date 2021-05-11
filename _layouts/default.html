@@ -6,6 +6,27 @@
     <title>{{ site.title }} • {{ page.title }}</title>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
 
+    <!-- Scripts -->
+		<script type="text/javascript">
+			window.addEventListener('load', function () {
+				var links = document.getElementsByTagName('a');
+				var inputs = document.getElementsByClassName('hiddenRef');
+				var ref = /ref=(.*)/gi.exec(window.location.href);
+
+				// Pass the ref to all the links and fill all the inputs
+				if (ref !== null) {
+					for (var i = 0; i < links.length; i++) {
+						links[i].href = links[i].href + "?ref=" + ref[1];
+					}
+					for (var i = 0; i < inputs.length; i++) {
+						inputs[i].value = ref[1];
+					}
+				}
+			}, false);
+		</script>
+		<noscript>JavaScript is disabled on your browser.</noscript>
+
+
     <!-- SEO -->
     <meta name="description" content="Our relationship with work is changing how we live and move in the world everyday. This blog is the place where we bring together our thoughts about the future of work.">
     <meta name="keywords" content="platform, collaborate, socialize, virtual, space, spatial, chat, invite, connect, share, friends, coworkers, apps, accessories, customize, room">

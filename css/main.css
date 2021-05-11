@@ -389,7 +389,7 @@ form>input[type=email] {
     font-family: var(--font-silka);
     font-weight: 400;
     min-width: 100px;
-    padding: 16px 0px;
+    padding: 16px 8px;
     border-radius: var(--border-radius-m);
 }
 
