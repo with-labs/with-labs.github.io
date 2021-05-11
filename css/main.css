@@ -466,12 +466,13 @@ footer>ul>li>p {
 }
 
 @media screen and (max-width: 1400px) {
-    .logo {
-        display: block;
-        width: 108px;
-        height: 72px;
-        margin-bottom: 40px;
+    body {
+        grid: auto / 25% auto;
     }
+
+}
+
+@media screen and (max-width: 1160px) {
     .cover {
         background-color: #eee;
         height: 0px;
@@ -481,9 +482,6 @@ footer>ul>li>p {
         display: block;
         overflow-y: auto;
     }
-    /* main {
-        padding: 60px;
-    } */
 }
 
 @media only screen and (max-width: 720px) {
