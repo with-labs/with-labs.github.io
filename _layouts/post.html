@@ -18,9 +18,9 @@ layout: default
 
 <h2 class="centered">Read more articles</h2>
 <div class="read_more">
-{% for post in site.posts limit:6 %}
+{% for post in site.posts limit:5 %}
   {% if post.url != page.url %} 
-    {% if forloop.index < 6 or found %}
+    {% if forloop.index < 5 or found %}
       <a class="card padding_small" href="{{ post.url }}" title="{{ post.title }}">
 			<img class="read_more_header" src="{{ post.header }}" width="100%"/>
 			<p class="read_more_title">{{ post.title }}</p>
