@@ -516,8 +516,12 @@ footer>ul>li>p {
 
 @media only screen and (max-width: 600px) {
 
+    main {
+        padding: 32px;
+    }
+
     .signup_block {
-        padding: 20px;
+        padding: 16px;
     }
 
     form {
@@ -545,6 +549,6 @@ footer>ul>li>p {
     }
 
     .padding_card {
-        padding: 20px;
+        padding: 16px;
     }
 }
