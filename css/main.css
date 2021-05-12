@@ -505,6 +505,11 @@ footer>ul>li>p {
         column-gap: 24px;
         row-gap: 24px;
     }
+
+    .logo {
+        width: 108px;
+        height: 72px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
